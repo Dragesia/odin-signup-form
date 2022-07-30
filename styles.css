@@ -1,0 +1,68 @@
+/* General adjustments */
+:root {
+    --navy: #080D18;
+    --skyblue: #172744;
+    --blue: #74B5FF;
+    --lightblue: #DFF6FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--navy, navy);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Left div */
+
+.left {
+    width: 50rem;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Right div */
+
+.right {
+    width: 100rem;
+    background-color: var(--lightblue, lightblue);
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
