@@ -1,9 +1,15 @@
 /* General adjustments */
+@import url('https://fonts.googleapis.com/css?family=Gulzar');
+
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
 :root {
     --navy: #080D18;
     --skyblue: #172744;
     --blue: #74B5FF;
     --lightblue: #DFF6FF;
+    font-family: 'Gulzar';
+    line-height: 4rem;
 }
 
 * {
@@ -46,6 +52,11 @@ body {
     text-align: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
 
 form {
@@ -59,10 +70,47 @@ form {
 label {
     display: block;
     text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: -12px;
+    font-family: 'Inter';
 }
 
 .rows {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--skyblue);
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+input:focus {
+    background-color: var(--blue);
+}
+
+input {
+    height: 3rem;
+    padding-left: 0.45rem;
+    width: 37.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
 }
