@@ -114,6 +114,10 @@ button {
     color: white;
 }
 
+button:active {
+    transform: scale(0.99);
+}
+
 input:focus {
     background-color: var(--blue);
 }
