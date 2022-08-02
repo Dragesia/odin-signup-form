@@ -112,6 +112,7 @@ button {
     border: 0;
     outline: 0;
     color: white;
+    margin-top: 2rem;
 }
 
 button:active {
@@ -135,4 +136,15 @@ p {
 a {
     text-decoration: none;
     color: var(--blue);
+}
+
+.error {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: darkred;
+    position: absolute;
+    margin-top: -0.2rem;
+    max-width: 37.5rem;
+    text-align: left;
+    line-height: 1.5rem;
 }
