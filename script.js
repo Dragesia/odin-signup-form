@@ -64,9 +64,7 @@ function showPWError() {
     }
 }
 
-password.addEventListener("focusout", () => {
-    showPWError();
-});
+password.addEventListener("focusout", showPWError);
 
 const repwerror = document.querySelector("#repwerror");
 const repassword = document.querySelector("#repassword");
@@ -94,6 +92,12 @@ signupbtn.addEventListener("click", (e) => {
 });
 
 fn.addEventListener("keypress", (e) => {
+    if (e.key.toLowerCase() == e.key.toUpperCase()) {
+        e.preventDefault();
+    }
+});
+
+ln.addEventListener("keypress", (e) => {
     if (e.key.toLowerCase() == e.key.toUpperCase()) {
         e.preventDefault();
     }
